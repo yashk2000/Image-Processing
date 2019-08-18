@@ -69,3 +69,29 @@ Here we will be smoothing an image using Gaussian Blur. Image smoothing basicall
 **Image after smoothing:**
 ![Screenshot_20190818_160734](https://user-images.githubusercontent.com/41234408/63223434-e4f40100-c1d2-11e9-9472-c5491f7c11d8.png)
 
+## Other methods for image smoothing
+
+### blur()
+
+We can use the `cv::blur()` method in [this](https://github.com/yashk2000/Image-Processing/blob/master/imgSmoothingBlur.cpp) way.
+
+**Image after blurring**
+![Screenshot_20190818_165436](https://user-images.githubusercontent.com/41234408/63223842-29829b00-c1d9-11e9-8d3f-4e02883a9a8a.png)
+
+### medianBlur()
+
+We can use the `cv::medianblur()` method in [this](https://github.com/yashk2000/Image-Processing/blob/master/imageSmoothingMedianBlur.cpp) way.
+
+**Image after blurring**
+![Screenshot_20190818_165500](https://user-images.githubusercontent.com/41234408/63223833-07891880-c1d9-11e9-8de9-1e37b4790da1.png)
+
+### bilateralFilter()
+
+We can use the `cv::bilateralFilter()` method in [this](https://github.com/yashk2000/Image-Processing/blob/master/imgSmoothingBilateralFilter.cpp) way.
+
+In bilateralFilter(), we need to keep the input and output images differnet, else we get an error. 
+
+Bilateral filter also takes a gaussian filter in space, but one more gaussian filter which is a function of pixel difference. Gaussian function of space make sure only nearby pixels are considered for blurring while gaussian function of intensity difference make sure only those pixels with similar intensity to central pixel is considered for blurring. So it preserves the edges since pixels at edges will have large intensity variation. The texture of the image is reduced, but the edges are conserved.
+
+**Image after blurring**
+![Screenshot_20190818_165158](https://user-images.githubusercontent.com/41234408/63223805-9e090a00-c1d8-11e9-8c8b-da43f3f75df0.png)
