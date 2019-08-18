@@ -8,7 +8,7 @@ Image is opened by the commnad `cv::imread(argv[1], -1);`. This can open an imag
 
 Here's how the window with the photo will appear:(it might appear differently in different systems depending upon the photo)
 
-![Screenshot_20190818_010130](https://user-images.githubusercontent.com/41234408/63216569-825c2000-c154-11e9-89c4-eab785f88094.png)
+![Screenshot_20190818_160716](https://user-images.githubusercontent.com/41234408/63223432-e1607a00-c1d2-11e9-9bb6-c4d4003b5ea6.png)
 
 # 2) Opening a video using openCV
 
