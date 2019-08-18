@@ -57,3 +57,11 @@ And here's how the terminal will be lookking like while you use `r` or `s` or `h
 
 ![Screenshot_20190818_010249](https://user-images.githubusercontent.com/41234408/63216712-1b8c3600-c157-11e9-8128-7b1477c1d0a0.png)
 
+# 3) A simple transformation: Smoothing an image
+
+**Image before smoothing:**
+![Screenshot_20190818_160716](https://user-images.githubusercontent.com/41234408/63223432-e1607a00-c1d2-11e9-9bb6-c4d4003b5ea6.png)
+
+**Image after smoothing:**
+![Screenshot_20190818_160734](https://user-images.githubusercontent.com/41234408/63223434-e4f40100-c1d2-11e9-9472-c5491f7c11d8.png)
+
