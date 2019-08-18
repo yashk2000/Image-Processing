@@ -6,10 +6,12 @@ void imageSmooothing(const cv::Mat & image) {
     
     cv::imshow("Input image", image);
     
+    
+    cv::Mat out1;
     cv::Mat out;
     
-    cv::bilateralFilter(image, out, 5, 75, 75); 
-    cv::bilateralFilter(out, out, 5, 75, 75); 
+    cv::bilateralFilter(image, out1, 5, 75, 75); 
+    cv::bilateralFilter(out1, out, 5, 75, 75); 
     
     cv::imshow("Output image", out);
     
