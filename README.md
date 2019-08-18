@@ -26,6 +26,29 @@ Here's how the most basic video player with HighGUI will look:
 
 The source code for creating a video player can be found [here](https://github.com/yashk2000/Image-Processing/blob/master/vidPlayer.cpp)
 
+Here we use global variables to keep track of the trackbar position and update in when needed, along with the `cv::VideoCapture` object as global. The `run` variable helps in keeping displaying frames as long as it isn't 0. We update the position of the seekbar with every frame being displayed. But this will put us into **single-step** mode whoch we don't want. To avoid this, we use the `dontset` variable to help us stay in the **run** mode. 
+
+```cpp
+
+void onTrackbarSlide(int pos, void *) {
+  cap.set(cv::CAP_PROP_POS_FRAMES, pos);
+  if( !dontset )
+    run = 1;
+  dontset = 0;
+}
+```
+We need the number of frames in the video in order to calliberate the seekbar. This we get by using the `cap.get(cv::CAP_PROP_FRAMECOUNT`. Next, using thr number of frames, and also setting a variable to get the position of the seekbar, we use `cv::createTrackbar` to create the trackbar.
+
+```cpp
+
+createTrackbar("Position", "Video", &slider_position, frames, onTrackbarSlide);
+```
+
+While the video is running, we keep taking user input, inside the while loop. The character variable, `ch` is used for this. If user enters `r`, the video enters **run** mode and plays like nay normal video. On pressing `s`, we enter the **single-step** mode. If the video is in run mode and then we press `s`, the video gets paused. Hence the pause functionality can be implemented this way too. If the user presses `h`, we display the user with options of what can be done:
+`Press r to run the video, s to pause or run the video frame by frame, h for help and esc to quit`.
+
+This way, just using c++, we can use the HighGUI package provided in openCV to create our own video player.
+
 This is how the video player looks with the seekbar: 
 
 ![Screenshot_20190818_010241](https://user-images.githubusercontent.com/41234408/63216703-fe576780-c156-11e9-9a88-19dbad8e4b42.png)
