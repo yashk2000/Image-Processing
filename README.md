@@ -57,7 +57,7 @@ And here's how the terminal will be lookking like while you use `r` or `s` or `h
 
 ![Screenshot_20190818_010249](https://user-images.githubusercontent.com/41234408/63216712-1b8c3600-c157-11e9-8128-7b1477c1d0a0.png)
 
-# 3) A simple transformation: Smoothing an image
+# 4) A simple transformation: Smoothing an image
 
 The source code for this can be found [here](https://github.com/yashk2000/Image-Processing/blob/master/imgSmoothing.cpp)
 
@@ -95,3 +95,12 @@ Bilateral filter also takes a gaussian filter in space, but one more gaussian fi
 
 **Image after blurring**
 ![Screenshot_20190818_165158](https://user-images.githubusercontent.com/41234408/63223805-9e090a00-c1d8-11e9-8c8b-da43f3f75df0.png)
+
+# 5) Downsampling an image 
+
+This is one of the applications of Gaussian Blurring. We use Gaussian Blurring to downsample an image to change the sccale in which an image is viewed. We use the `cv::pyrDown()` function to do both Gaussian Blurring and downsampling simultaneously.
+
+**Result of Downsampling an image:**
+![Screenshot_20190820_001735](https://user-images.githubusercontent.com/41234408/63291423-1b1fa680-c2e1-11e9-8165-c07b8e5f352d.png)
+
+The first image is the input image, which is larger. The second one is the output image which is half the size of the the input image. This shows that the image was downscaled by a margin of 2.
