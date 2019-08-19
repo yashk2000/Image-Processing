@@ -98,9 +98,33 @@ Bilateral filter also takes a gaussian filter in space, but one more gaussian fi
 
 # 5) Downsampling an image 
 
+The source code for this can be found [here](https://github.com/yashk2000/Image-Processing/blob/master/DownSample.cpp)
+
 This is one of the applications of Gaussian Blurring. We use Gaussian Blurring to downsample an image to change the sccale in which an image is viewed. We use the `cv::pyrDown()` function to do both Gaussian Blurring and downsampling simultaneously.
 
 **Result of Downsampling an image:**
 ![Screenshot_20190820_001735](https://user-images.githubusercontent.com/41234408/63291423-1b1fa680-c2e1-11e9-8165-c07b8e5f352d.png)
 
 The first image is the input image, which is larger. The second one is the output image which is half the size of the the input image. This shows that the image was downscaled by a margin of 2.
+
+# 6) Simple way to detect edges of an image using Canny Edge Detector
+
+The source code for this can be found [here](https://github.com/yashk2000/Image-Processing/blob/master/CannyDetector.cpp)
+
+To detect image edges, we use the Canny Edge Detector. To do this, we first convert the image to grey scale using `cv::cvtColor()`. This is done because Canny Egde Detector needs only a sigle channel to write to and a grey scale image is a single-channel image. Once the image is in grey scale, we can proceed with edge detection using `cv::Canny`. This might work even without converting the image to grey scale, but since Canny is a **single-channel** writing function, it is recommended to create a single-channel image i.e. a grey scale image.
+
+**The grey scale and the final image with edges highlight will look like the following:**
+
+**Input Image**
+![Screenshot_20190820_005900](https://user-images.githubusercontent.com/41234408/63294985-41494480-c2e9-11e9-997f-89eb1337c1f3.png)
+
+**Grey Scale Image**
+![Screenshot_20190820_005909](https://user-images.githubusercontent.com/41234408/63295000-49a17f80-c2e9-11e9-9fad-1a1a676db1c4.png)
+
+**Canny Image with prominent edges**
+![Screenshot_20190820_005918](https://user-images.githubusercontent.com/41234408/63295015-51612400-c2e9-11e9-83ab-87cab8973566.png)
+
+**Canny image when detecting edges without converting to grey scale**
+![Screenshot_20190820_011012](https://user-images.githubusercontent.com/41234408/63295042-5920c880-c2e9-11e9-98da-a37f12e0e3de.png)
+
+Here you can see that some details are missing. It also shows some edges which are actually not image edges. The Canny image in which edges were detected after converting to grey scale has more details. That's the reason for using a single-channel image while doing edge detection using Canny.
