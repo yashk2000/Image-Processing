@@ -128,3 +128,50 @@ To detect image edges, we use the Canny Edge Detector. To do this, we first conv
 ![Screenshot_20190820_011012](https://user-images.githubusercontent.com/41234408/63295042-5920c880-c2e9-11e9-98da-a37f12e0e3de.png)
 
 Here you can see that some details are missing. It also shows some edges which are actually not image edges. The Canny image in which edges were detected after converting to grey scale has more details. That's the reason for using a single-channel image while doing edge detection using Canny.
+
+# 7) Taking input from device camera
+
+The source code for this can be found [here](https://github.com/yashk2000/Image-Processing/blob/master/InputFromCamera.cpp)
+
+Here, if we provide a path as input, the video at the provided path will be opened. Otherwise, the camera will open and start taking a video. If there are no input arguments, we use the `VideoCapture` object to open the camera. If there is only one camera conected to the device, then we pass 0 as a parameter to the `VideoCapture` object. If there are multiple cameras connected, we can pass -1 as the parameter to open any one camera randomly. 
+The video is displayed in the same way as a video stored in the computer. We use the same process as given in [this](https://github.com/yashk2000/Image-Processing/blob/master/openVid.cpp) code. 
+
+Now while displaying the video, we can put any effect we want. It is displayed frame by frame. So we can treat each frame as an image and put any effect we want on the frame. For Example:
+
+**Normal Code**
+```cpp
+
+while (true) {
+  cap >> frame;
+  if( frame.empty() ) break;
+  cv::imshow( "Example3", frame );
+  if( cv::waitKey(33) >= 0 ) break;
+}
+```
+
+**Code with grey scale effect while displaying video**
+```cpp
+
+while (true) {
+  cap >> frame;
+  if( frame.empty() ) break;
+  cv::cvtColor( frame, output_frame, cv::COLOR_BGR2GRAY);  
+  cv::imshow( "Output", output_frame );
+  if( cv::waitKey(33) >= 0 ) break;
+}
+```
+This will display your video in greyscale format.
+
+Here's how it looks while displaying a video:
+
+**Camera Check**
+
+![Screenshot_20190820_1732571](https://user-images.githubusercontent.com/41234408/63347080-06402300-c374-11e9-8766-d8279b7f4a20.png)
+
+**Normal Video being recorded by camera is displayed**
+
+![Screenshot_20190820_173257](https://user-images.githubusercontent.com/41234408/63347062-f4f71680-c373-11e9-8be7-5bcff601c798.png)
+
+**Grey Scaled Video**
+
+![Screenshot_20190820_180003](https://user-images.githubusercontent.com/41234408/63347331-7b135d00-c374-11e9-8fe6-413a83a906d2.png)
