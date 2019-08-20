@@ -175,3 +175,21 @@ Here's how it looks while displaying a video:
 **Grey Scaled Video**
 
 ![Screenshot_20190820_180003](https://user-images.githubusercontent.com/41234408/63347331-7b135d00-c374-11e9-8fe6-413a83a906d2.png)
+
+# 8) Getting and setting pixels in an image
+
+The source code for this can be found [here](https://github.com/yashk2000/Image-Processing/blob/master/pixels.cpp)
+
+Here we use the Vec3b object to store the values of Red, green and blue colored pixels in a RGB image. Vec3b represnts a vector with 3 byte enteries, with each byte representing one color. 
+
+If we are using an image with a single color, we can simply get the number of pixels of that color in the image by doing :
+```cpp
+
+(unsigned int)image.at<uchar>(y, x) //x, y represent pixel coordinates
+```
+
+To set a particular pixel of an image to a particular color, we simply access the pixel using it's coordinates and set it to the desired value. 
+```cpp
+
+image.at<uchar>(x, y) = 128;
+```
