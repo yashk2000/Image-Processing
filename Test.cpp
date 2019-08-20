@@ -1,5 +1,7 @@
 #include <opencv2/opencv.hpp>
 
+//this is just a random script in which I have combined both the pyrDown() and Canny() functions in a single pipeline.
+
 int main(int args, char** argv) {
     
     cv::namedWindow("Input Image", cv::WINDOW_AUTOSIZE);
