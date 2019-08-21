@@ -8,6 +8,7 @@
 6. [Simple way to detect edges of an image using Canny Edge Detector](https://github.com/yashk2000/Image-Processing#6-simple-way-to-detect-edges-of-an-image-using-canny-edge-detector)
 7. [Taking input from device camera](https://github.com/yashk2000/Image-Processing#7-taking-input-from-device-camera)
 8. [Getting and setting pixels in an image](https://github.com/yashk2000/Image-Processing#8-getting-and-setting-pixels-in-an-image)
+9. [Reading a video and writing it to a file](https://github.com/yashk2000/Image-Processing#9-reading-a-video-and-writing-it-to-a-file)
 
 # 1) Opening an image using openCV
 
