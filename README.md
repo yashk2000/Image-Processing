@@ -9,6 +9,7 @@
 7. [Taking input from device camera](https://github.com/yashk2000/Image-Processing#7-taking-input-from-device-camera)
 8. [Getting and setting pixels in an image](https://github.com/yashk2000/Image-Processing#8-getting-and-setting-pixels-in-an-image)
 9. [Reading a video and writing it to a file](https://github.com/yashk2000/Image-Processing#9-reading-a-video-and-writing-it-to-a-file)
+10. [Reading and writing a video recorded from camera to a file]()
 
 # 1) Opening an image using openCV
 
@@ -210,4 +211,10 @@ image.at<uchar>(x, y) = 128;
 
 The source code for this can be found [here](https://github.com/yashk2000/Image-Processing/blob/master/WriteFile.cpp)
 
-This is essentailly just an extension to the code where we opened an existing video file from the local storage of the computer. Here we just use the `cv::VideoWriter` to write our desired frames to the file we want. We specify that we are writing a video in the common MJPG(motion jpeg) by using the `CV_FOURCC` codec. Here, we have to give the `writer` object some parameters. The fitst parameter is the output file path, the second one is the output file type, then comes the number of frames and finally the dimensions(size) of the output frame/frames.
+This is essentailly just an extension to the [code](https://github.com/yashk2000/Image-Processing/blob/master/openVid.cpp) where we opened an existing video file from the local storage of the computer. Here we just use the `cv::VideoWriter` to write our desired frames to the file we want. We specify that we are writing a video in the common MJPG(motion jpeg) by using the `CV_FOURCC` codec. Here, we have to give the `writer` object some parameters. The fitst parameter is the output file path, the second one is the output file type, then comes the number of frames and finally the dimensions(size) of the output frame/frames.
+
+# 10) Reading and writing a video recorded from camera to a file
+
+The source code for this can be found [here](https://github.com/yashk2000/Image-Processing/blob/master/ReadWriteLogPolarFromCamera.cpp)
+
+This program is just an extension of the [one](https://github.com/yashk2000/Image-Processing/blob/master/InputFromCamera.cpp) where we took input from camera and [one](https://github.com/yashk2000/Image-Processing/blob/master/WriteFile.cpp) in which we wrote a video to another file. There's just one more creative thing we did here. Instead of directly writing the output to a file, which will be way easier, we first converetd the camera input to **log polar** form and wrote that to an output file. Log polar form is something like the way our eyes actually process what they see. We'll go into the details of the log polar form later on.
