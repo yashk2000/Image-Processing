@@ -204,3 +204,9 @@ To set a particular pixel of an image to a particular color, we simply access th
 
 image.at<uchar>(x, y) = 128;
 ```
+
+# 9) Reading a video and writing it to a file
+
+The source code for this can be found [here](https://github.com/yashk2000/Image-Processing/blob/master/WriteFile.cpp)
+
+This is essentailly just an extension to the code where we opened an existing video file from the local storage of the computer. Here we just use the `cv::VideoWriter` to write our desired frames to the file we want. We specify that we are writing a video in the common MJPG(motion jpeg) by using the `CV_FOURCC` codec.
