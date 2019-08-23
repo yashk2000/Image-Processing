@@ -269,6 +269,22 @@ Same as the `cv::Vec<>` class, `cv::Point<>` class also contains some aliases. T
 - Data is called by objects and not the dot operator. 
 - Directly derived from the `cv::Vec<>` class( `cv::Vec<double, 4`)
 
+| Operations | Example |
+| --- | --- |
+| Default constructor | cv::Scalar s |
+| Element wise multiplication | s1.mul(s2) |
+| Quaternion conjugation* | s.conj() | 
+| Quaternion Real Test | s.isReal() (return true iff s1 = s1 = s3 = 0) |
+
+
+*Quaternion Conjugation: 
+
+let v = a + bi + cj + dk
+
+The conjugate of this quaternion is defined by :
+
+v' = a - bi - cj - dk
+
 ### cv::Size<>
 
 - Has two members: height and width
