@@ -220,3 +220,60 @@ The source code for this can be found [here](https://github.com/yashk2000/Image-
 This program is just an extension of the [one](https://github.com/yashk2000/Image-Processing/blob/master/InputFromCamera.cpp) where we took input from camera and [one](https://github.com/yashk2000/Image-Processing/blob/master/WriteFile.cpp) in which we wrote a video to another file. Here we just have to give the path to the output file when we run the code, instead of a path to the input file.
 
 There's just one more creative thing we did here. Instead of directly writing the output to a file, which will be way easier, we first converetd the camera input to **log polar** form and wrote that to an output file. Log polar form is something like the way our eyes actually process what they see. We'll go into the details of the log polar form later on.
+
+# 11) Data types used in openCV
+
+### cv::Vec<>
+
+The `cv::Vec<>` is used as a container for almost any type of data(including objects, pointers etc.) in cpp. But we mainly use it as a container for primitive data types such as int, float, char etc. 
+We will not be using the `cv::Vec<>` template much. Instead we use the aliases that exist for some common instatiations of `cv::Vec<>`. Some of these are:
+- `cv::Vec2i` - This will serve as a two element integer vector
+- `cv::Vec3i` - This will serve as a three element integer vector
+- `cv::Vec4d` - This will serve as a four element double precision floating point vector
+
+The limitation of the cv::Vec class is that it is not very effecient for handling large arrays. For that we have the `cv::Mat` class(which we will learn about later on).
+
+### cv::Matx<>
+
+The `cv::Matx<>` class is  is a fixed matrix class which is highly effecient for dealing with 2 x 2, 3 x 3 and 4 x 4 matrix operations. Here too the only drawback is that we need to know the matrix dimensions before hand, and this is not efficient when it comes to handling large sized arrays. Again thr `cv::Mat` class(which wiil be discussed later on) comes to the rescue here. 
+
+### cv::Point<>
+
+This class is similar to the `cv::Vec<>` class. We can store 2 to 3 primitive data types using instances of `cv::Point<>`. Here we can call the data stored using the dot operator and class insatance itself.
+For example if the instance is `point`. For a vector, we'll do `point[0]`, `point[1]` and so on. Instead in the `cv::Point<>` class, we simply do, `point.x`, `point.y` and so on. 
+Same as the `cv::Vec<>` class, `cv::Point<>` class also contains some aliases. The most commonly used ones are: 
+- `cv::Point2i`
+- `cv::Point2f`
+- `cv::Point2d`
+- `cv::Point3i`
+- `cv::Point3f`
+- `cv::Point3d`
+
+### cv::Scalar<>
+
+- Used for storing a four dimensional point.
+- It aliased to store a four component vector with double precision components.  
+- Data is called by objects and not the dot operator. 
+- Directly derived from the `cv::Vec<>` class( `cv::Vec<double, 4`)
+
+### cv::Size<>
+
+- Has two members: height and width
+- It is an alias for `cv:Size2i`
+- To store floating point data, use `cv::Size2f`
+
+### cv::Rect<>
+
+- Has four members: height, width, x and y
+- Alias to store the ineger form of a rectangle 
+
+### cv::RotatedRect<>
+
+- Store a rectangle which is not axis aligned
+- Contains:
+
+         - `cv::Point2f` object, called `center`
+         
+         - `cv::Size2f` object, called `size`
+         
+         - A float called `angle`
