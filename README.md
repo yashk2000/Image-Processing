@@ -316,7 +316,8 @@ v' = a - bi - cj - dk
 | Checking if point p is inside rectagle r | r.contains(p) |
 | Intersection of rectangle r1  and r2 | cv::Rect r3 = r1 \& r2; |
 | | r1 \&= r2; |
-
+| Minimum area rectangle containing r1 and r2 | cv::Rect r3 = r1 \| r2; |
+| | r1 \|= r2 |
 
 ### cv::RotatedRect<>
 
