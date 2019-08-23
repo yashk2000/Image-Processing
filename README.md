@@ -236,6 +236,12 @@ We will not be using the `cv::Vec<>` template much. Instead we use the aliases t
 
 The limitation of the cv::Vec class is that it is not very effecient for handling large arrays. For that we have the `cv::Mat` class(which we will learn about later on).
 
+| Operations | Examples |
+| --- | --- |
+| Default constructor | Vec2s v2s; Vec6f v6f; |
+| Member access | v4f[i], v3w(j); // both [], () are fine
+| Vector cross product | v3f.cross(u3f); |
+
 ### cv::Matx<>
 
 The `cv::Matx<>` class is  is a fixed matrix class which is highly effecient for dealing with 2 x 2, 3 x 3 and 4 x 4 matrix operations. Here too the only drawback is that we need to know the matrix dimensions before hand, and this is not efficient when it comes to handling large sized arrays. Again thr `cv::Mat` class(which wiil be discussed later on) comes to the rescue here. 
