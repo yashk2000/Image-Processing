@@ -240,6 +240,34 @@ The limitation of the cv::Vec class is that it is not very effecient for handlin
 
 The `cv::Matx<>` class is  is a fixed matrix class which is highly effecient for dealing with 2 x 2, 3 x 3 and 4 x 4 matrix operations. Here too the only drawback is that we need to know the matrix dimensions before hand, and this is not efficient when it comes to handling large sized arrays. Again thr `cv::Mat` class(which wiil be discussed later on) comes to the rescue here. 
 
+If you want a mtrix with dimensions other than the specified ones, we can initialize it ourselves -> `cv::Matx<5, 5, float>`
+
+| Operations | Examples |
+| --- | --- |
+| Default Constructor | cv::Matx33f m33f;
+| | cv::Matx43d m43d; |
+| Matrix of identical elements | m33f = cv::Matx33f::all(x); |
+| Matrix of zeros | m230 = cv::Matx23d::zeros(); |
+| Matrix of ones | m161 = cv::Matx16d::ones(); |
+| Create a unit matrix | m33f = cv::Mat33f::eye(); |
+| Matrix that can hold the diagnols of another matrix | m33f = cv::Matx33f::diag(); |
+| Create a matrix with uniformly distributed entries | m44f = cv::Matx44f::randu(min, max); |
+| Create a matrix with normally distributed entries | m44f = cv::Matx44f::nrandn(mean, varience); |
+| Member access | m(i, j)//for multi dimensionsal |
+| | m(i) //for oone dimnesional matrices only |
+| Matrix algebra | m1 x m2, m1 + m2, m1 - m2 |
+| Singleton algebra | m x a, a x m, m / a |
+| Comparison | m1 == m2; |
+| Dot Product | m1.dot(m2) | 
+| | m1.ddot(m2) |
+| Extract a 2x2 matrix at position i, j | m44f.get_minor<2, 2>(i, j); |
+| Extract row i | m14f  = m44f.row(i); |
+| Extract column j | m41f = m44f.col(j); |
+| Extract diagnol | m41f = m44f.diag(); |
+| Find traspose | n44f = m44f.t(); | 
+| Inverse of a matrix | n44f = m44f.inv(method) // default method is `cv::DECOMP_LU` |
+| Per element multiplication | m1.mul(m2) |
+
 ### cv::Point<>
 
 This class is similar to the `cv::Vec<>` class. We can store 2 to 3 primitive data types using instances of `cv::Point<>`. Here we can call the data stored using the dot operator and class insatance itself.
