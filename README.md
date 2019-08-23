@@ -371,3 +371,12 @@ v' = a - bi - cj - dk
 | Construct a rectangle using a point, size and angle | cv::RotatedRect(p, s, theta); |
 | Member access | rr.center, rr.size, rr.angle | 
 | Return all corners | rr.points(pts[4]) |
+
+### cv::Complexf<>
+
+| Operations | Examples |
+| --- | --- |
+| Default constructor | cv::Complexf z1 |
+| | cv::Complexd z2 |
+| Member access | z.re, z.im; |
+| Complex Conjugate | z2 = z1.conj(); |
