@@ -224,6 +224,8 @@ There's just one more creative thing we did here. Instead of directly writing th
 
 # 11) Data types used in openCV
 
+Here we will be noticing many of the data types ending with 2d, 2i, 2f, 3d, 3i, 3b and so on. Here the number basically represents the dimension of the data stored and the characters indicate the following: `i for integer`, `f for float`, `d for double` and `b for unsigned character`.
+
 ### cv::Vec<>
 
 The `cv::Vec<>` is used as a container for almost any type of data(including objects, pointers etc.) in cpp. But we mainly use it as a container for primitive data types such as int, float, char etc. 
