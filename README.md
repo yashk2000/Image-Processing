@@ -304,6 +304,17 @@ v' = a - bi - cj - dk
 - Has four members: height, width, x and y
 - Alias to store the ineger form of a rectangle 
 
+| Operations | Examples |
+| --- | --- | 
+| Default Constructor | cv::Rect r |
+| Construct from origin and size | cv::Rect(p, sz) |
+| Construct from 2 given points | cv::Rect(p1, p2) |
+| Member Access | r.x, r.y, r.width, r.height |
+| Area | r.area() |
+| Finding coordinates of the upper left corner | r.tl() |
+| Finding coordinates of the bottom right corner | r.br() |
+| Checking if point p is inside rectagle r | r.contains(p) |
+
 ### cv::RotatedRect<>
 
 - Store a rectangle which is not axis aligned
