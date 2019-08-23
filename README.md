@@ -252,6 +252,16 @@ Same as the `cv::Vec<>` class, `cv::Point<>` class also contains some aliases. T
 - `cv::Point3f`
 - `cv::Point3d`
 
+| Operation | Example | 
+| --- | --- |
+| Default Constructor | cv::point 2i p; |
+|                     | cv::point 3f p; |
+| Member access| p.x, p.y, p.z(if 3 dimensional) |
+| Dot Product | float x = p1.dot(p2) |
+| Double Precision Dot Product | double x = p1.ddot(p2) |
+| Cross Product | p1.cross(p2) |
+| To check if point p lies inside rectangle r | p.inside(r) |
+
 ### cv::Scalar<>
 
 - Used for storing a four dimensional point.
