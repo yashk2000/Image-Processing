@@ -334,3 +334,12 @@ v' = a - bi - cj - dk
          - `cv::Size2f` object, called `size`
          
          - A float called `angle`
+         
+         
+| Operations | Examples |
+| --- | --- |
+| Default Constructor | cv::RotatedRect rr(); |
+| Construct a rectangle from 2 points | cv::RotatedTect(p1, p2); |
+| Construct a rectangle using a point, size and angle | cv::RotatedRect(p, s, theta); |
+| Member access | rr.center, rr.size, rr.angle | 
+| Return all corners | rr.points(pts[4]) |
