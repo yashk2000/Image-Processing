@@ -314,6 +314,9 @@ v' = a - bi - cj - dk
 | Finding coordinates of the upper left corner | r.tl() |
 | Finding coordinates of the bottom right corner | r.br() |
 | Checking if point p is inside rectagle r | r.contains(p) |
+| Intersection of rectangle r1  and r2 | cv::Rect r3 = r1 \& r2; |
+| | r1 \&= r2; |
+
 
 ### cv::RotatedRect<>
 
