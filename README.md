@@ -10,6 +10,7 @@
 8. [Getting and setting pixels in an image](https://github.com/yashk2000/Image-Processing#8-getting-and-setting-pixels-in-an-image)
 9. [Reading a video and writing it to a file](https://github.com/yashk2000/Image-Processing#9-reading-a-video-and-writing-it-to-a-file)
 10. [Reading and writing a video recorded from camera to a file](https://github.com/yashk2000/Image-Processing/blob/master/README.md#10-reading-and-writing-a-video-recorded-from-camera-to-a-file)
+11. [Data Types in openCV](https://github.com/yashk2000/Image-Processing#11-data-types-used-in-opencv)
 
 # 1) Opening an image using openCV
 
