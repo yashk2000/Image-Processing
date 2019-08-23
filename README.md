@@ -317,7 +317,12 @@ v' = a - bi - cj - dk
 | Intersection of rectangle r1  and r2 | cv::Rect r3 = r1 \& r2; |
 | | r1 \&= r2; |
 | Minimum area rectangle containing r1 and r2 | cv::Rect r3 = r1 \| r2; |
-| | r1 \|= r2 |
+| | r1 \|= r2; |
+| Tranalte a rectan;ge by amount x | cv::Rect rx = r + x;  |
+| | r += x; |
+| Enlarge a rectanlge by s | cv::Rect rs = r + s; |
+| | r += s; |
+| Compare rectangles for equality | bool e = (r1 == r2); |
 
 ### cv::RotatedRect<>
 
