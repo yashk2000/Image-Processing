@@ -291,6 +291,14 @@ v' = a - bi - cj - dk
 - It is an alias for `cv:Size2i`
 - To store floating point data, use `cv::Size2f`
 
+| Operations | Examples |
+| --- | --- |
+| Default construtor | cv::Size s;
+| | cv::Size2i s; |
+| | cv::Size2f s;|
+| Member access | s.width, s.height|
+| Finding area| s.area() |
+
 ### cv::Rect<>
 
 - Has four members: height, width, x and y
