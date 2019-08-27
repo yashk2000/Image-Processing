@@ -386,3 +386,14 @@ v' = a - bi - cj - dk
 | | cv::Complexd z2 |
 | Member access | z.re, z.im; |
 | Complex Conjugate | z2 = z1.conj(); |
+
+# Creating a histogram with the frequency of pixels in an image
+
+The source code for this can be found [here](https://github.com/yashk2000/Image-Processing/blob/master/histogram.cpp)
+// to be done
+
+# Enahnce an image using Histogram Equalization
+
+The source code for this can be found [here](https://github.com/yashk2000/Image-Processing/blob/master/histogramEqualization.cpp)
+
+//to be done
