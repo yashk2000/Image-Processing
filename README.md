@@ -396,4 +396,20 @@ The source code for this can be found [here](https://github.com/yashk2000/Image-
 
 The source code for this can be found [here](https://github.com/yashk2000/Image-Processing/blob/master/histogramEqualization.cpp)
 
-//to be done
+It is a method that improves the contrast in an image, in order to stretch out the intensity range. Equalization implies mapping one distribution (the given histogram) to another distribution (a wider and more uniform distribution of intensity values) so the intensity values are spread over the whole range.
+
+**Original Image**
+
+![input](https://user-images.githubusercontent.com/41234408/63831243-d99b9500-c98b-11e9-87f0-aa6fb5945fe9.png)
+
+**Histogram of original image**
+
+![hist](https://user-images.githubusercontent.com/41234408/63831240-d7393b00-c98b-11e9-895f-aaf51ff6ddbd.png)
+
+**Output Image**
+
+![output](https://user-images.githubusercontent.com/41234408/63831322-09e33380-c98c-11e9-83fa-ef5c8795e1a6.png)
+
+**Histogram of output image**
+
+![Screenshot_20190828_120113](https://user-images.githubusercontent.com/41234408/63831347-19fb1300-c98c-11e9-9e03-b1fcb32c1c09.png)
