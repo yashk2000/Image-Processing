@@ -395,11 +395,11 @@ This code just generates a graph with the frequency of pixels in an image.
 
 **Input Image**
 
-![kakashi](https://user-images.githubusercontent.com/41234408/63831770-056b4a80-c98d-11e9-90ed-383becf1ed5a.jpg)
+![kakashi](https://user-images.githubusercontent.com/41234408/63835160-7cf0a800-c994-11e9-9451-1b9a5bcb0189.jpg)
 
 **Histogram**
 
-![Screenshot_20190828_120757](https://user-images.githubusercontent.com/41234408/63831821-2338af80-c98d-11e9-89cf-9f17bec9f24e.png)
+![Screenshot_20190828_130431](https://user-images.githubusercontent.com/41234408/63835216-9f82c100-c994-11e9-8760-9f486592b2ed.png)
 
 # Enahnce an image using Histogram Equalization
 
