@@ -11,7 +11,7 @@
 9. [Reading a video and writing it to a file](https://github.com/yashk2000/Image-Processing#9-reading-a-video-and-writing-it-to-a-file)
 10. [Reading and writing a video recorded from camera to a file](https://github.com/yashk2000/Image-Processing/blob/master/README.md#10-reading-and-writing-a-video-recorded-from-camera-to-a-file)
 11. [Data Types in openCV](https://github.com/yashk2000/Image-Processing#11-data-types-used-in-opencv)
-12. [Creating a histogram with the frequency of pixels in an image]()
+12. [Creating a histogram with the frequency of pixels in an image](https://github.com/yashk2000/Image-Processing#creating-a-histogram-with-the-frequency-of-pixels-in-an-image)
 13. [Enhance an image using Histogram Equalization](https://github.com/yashk2000/Image-Processing#enhance-an-image-using-histogram-equalization)
 
 # 1) Opening an image using openCV
