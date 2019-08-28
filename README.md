@@ -390,7 +390,16 @@ v' = a - bi - cj - dk
 # Creating a histogram with the frequency of pixels in an image
 
 The source code for this can be found [here](https://github.com/yashk2000/Image-Processing/blob/master/histogram.cpp)
-// to be done
+
+This code just generates a graph with the frequency of pixels in an image.
+
+**Input Image**
+
+![kakashi](https://user-images.githubusercontent.com/41234408/63831770-056b4a80-c98d-11e9-90ed-383becf1ed5a.jpg)
+
+**Histogram**
+
+![Screenshot_20190828_120757](https://user-images.githubusercontent.com/41234408/63831821-2338af80-c98d-11e9-89cf-9f17bec9f24e.png)
 
 # Enahnce an image using Histogram Equalization
 
