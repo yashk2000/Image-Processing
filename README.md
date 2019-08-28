@@ -12,7 +12,7 @@
 10. [Reading and writing a video recorded from camera to a file](https://github.com/yashk2000/Image-Processing/blob/master/README.md#10-reading-and-writing-a-video-recorded-from-camera-to-a-file)
 11. [Data Types in openCV](https://github.com/yashk2000/Image-Processing#11-data-types-used-in-opencv)
 12. [Creating a histogram with the frequency of pixels in an image]()
-13. [Enahnce an image using Histogram Equalization]()
+13. [Enhance an image using Histogram Equalization](https://github.com/yashk2000/Image-Processing#enhance-an-image-using-histogram-equalization)
 
 # 1) Opening an image using openCV
 
@@ -403,7 +403,7 @@ This code just generates a graph with the frequency of pixels in an image.
 
 ![Screenshot_20190828_130431](https://user-images.githubusercontent.com/41234408/63835216-9f82c100-c994-11e9-8760-9f486592b2ed.png)
 
-# Enahnce an image using Histogram Equalization
+# Enhance an image using Histogram Equalization
 
 The source code for this can be found [here](https://github.com/yashk2000/Image-Processing/blob/master/histogramEqualization.cpp)
 
