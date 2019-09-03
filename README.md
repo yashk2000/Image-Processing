@@ -116,7 +116,7 @@ Bilateral filter also takes a gaussian filter in space, but one more gaussian fi
 
 The source code for this can be found [here](https://github.com/yashk2000/Image-Processing/blob/master/DownSample.cpp)
 
-This is one of the applications of Gaussian Blurring. We use Gaussian Blurring to downsample an image to change the sccale in which an image is viewed. We use the `cv::pyrDown()` function to do both Gaussian Blurring and downsampling simultaneously.
+This is one of the applications of Gaussian Blurring. We use Gaussian Blurring to downsample an image to change the scale in which an image is viewed. We use the `cv::pyrDown()` function to do both Gaussian Blurring and downsampling simultaneously.
 
 **Result of Downsampling an image:**
 ![Screenshot_20190820_001735](https://user-images.githubusercontent.com/41234408/63291423-1b1fa680-c2e1-11e9-8165-c07b8e5f352d.png)
