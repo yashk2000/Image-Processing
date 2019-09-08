@@ -407,6 +407,8 @@ This code just generates a graph with the frequency of pixels in an image.
 
 The source code for this can be found [here](https://github.com/yashk2000/Image-Processing/blob/master/histogramEqualization.cpp)
 
+[Here](https://github.com/yashk2000/Image-Processing/blob/master/hisEqualMyAlgo.cpp) is my own implementation of Histogram Equalization instead of using the function directly provided by openCV.
+
 It is a method that improves the contrast in an image, in order to stretch out the intensity range. Equalization implies mapping one distribution (the given histogram) to another distribution (a wider and more uniform distribution of intensity values) so the intensity values are spread over the whole range.
 
 **Original Image**
