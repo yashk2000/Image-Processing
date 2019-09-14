@@ -426,3 +426,9 @@ It is a method that improves the contrast in an image, in order to stretch out t
 **Histogram of output image**
 
 ![Screenshot_20190828_120113](https://user-images.githubusercontent.com/41234408/63831347-19fb1300-c98c-11e9-9e03-b1fcb32c1c09.png)
+
+# Constrast-Limited Adaptive Histogram Equalization
+
+The code for this can be found [here](https://github.com/yashk2000/Image-Processing/blob/master/clahe.cpp)
+
+Histogram equalization is a global function, where as CLAHE is a local function. In CLAHE, a small block of an image is taken, on that small block histogram equalization is performed. In CLAHE, we have two factors: block size and clip limit based on which histogram equalization is performed on each block.
