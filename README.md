@@ -13,6 +13,7 @@
 11. [Data Types in openCV](https://github.com/yashk2000/Image-Processing#11-data-types-used-in-opencv)
 12. [Creating a histogram with the frequency of pixels in an image](https://github.com/yashk2000/Image-Processing#creating-a-histogram-with-the-frequency-of-pixels-in-an-image)
 13. [Enhance an image using Histogram Equalization](https://github.com/yashk2000/Image-Processing#enhance-an-image-using-histogram-equalization)
+14. [Constrast-Limited Adaptive Histogram Equalization](https://github.com/yashk2000/Image-Processing#constrast-limited-adaptive-histogram-equalization)
 
 # 1) Opening an image using openCV
 
@@ -427,7 +428,7 @@ It is a method that improves the contrast in an image, in order to stretch out t
 
 ![Screenshot_20190828_120113](https://user-images.githubusercontent.com/41234408/63831347-19fb1300-c98c-11e9-9e03-b1fcb32c1c09.png)
 
-# Constrast-Limited Adaptive Histogram Equalization
+# 14) Constrast-Limited Adaptive Histogram Equalization
 
 The code for this can be found [here](https://github.com/yashk2000/Image-Processing/blob/master/clahe.cpp)
 
