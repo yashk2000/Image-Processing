@@ -433,3 +433,15 @@ It is a method that improves the contrast in an image, in order to stretch out t
 The code for this can be found [here](https://github.com/yashk2000/Image-Processing/blob/master/clahe.cpp)
 
 Histogram equalization is a global function, where as CLAHE is a local function. In CLAHE, a small block of an image is taken, on that small block histogram equalization is performed. In CLAHE, we have two factors: block size and clip limit based on which histogram equalization is performed on each block.
+
+**Original Image**
+
+![Screenshot_20190919_220656](https://user-images.githubusercontent.com/41234408/65263635-aa131f00-db2a-11e9-8f7a-97c459fd0db6.png)
+
+**Histogram Equlaized Image**
+
+![Screenshot_20190919_2206561](https://user-images.githubusercontent.com/41234408/65263684-c1520c80-db2a-11e9-9147-5ad5154f4e9a.png)
+
+**CLAHE Image**
+
+![Screenshot_20190919_220830](https://user-images.githubusercontent.com/41234408/65263712-cca53800-db2a-11e9-8d96-871001233789.png)
