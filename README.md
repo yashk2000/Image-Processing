@@ -223,7 +223,7 @@ The source code for this can be found [here](https://github.com/yashk2000/Image-
 
 This program is just an extension of the [one](https://github.com/yashk2000/Image-Processing/blob/master/InputFromCamera.cpp) where we took input from camera and [one](https://github.com/yashk2000/Image-Processing/blob/master/WriteFile.cpp) in which we wrote a video to another file. Here we just have to give the path to the output file when we run the code, instead of a path to the input file.
 
-There's just one more creative thing we did here. Instead of directly writing the output to a file, which will be way easier, we first converetd the camera input to **log polar** form and wrote that to an output file. Log polar form is something like the way our eyes actually process what they see. We'll go into the details of the log polar form later on.
+There's just one more creative thing we did here. Instead of directly writing the output to a file, which will be way easier, we first converted the camera input to **log polar** form and wrote that to an output file. Log polar form is something like the way our eyes actually process what they see. We'll go into the details of the log polar form later on.
 
 # 11) Data types used in openCV
 
