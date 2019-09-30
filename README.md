@@ -70,7 +70,7 @@ This is how the video player looks with the seekbar:
 
 ![Screenshot_20190818_010241](https://user-images.githubusercontent.com/41234408/63216703-fe576780-c156-11e9-9a88-19dbad8e4b42.png)
 
-And here's how the terminal will be lookking like while you use `r` or `s` or `h` or `esc` to control the player:
+And here's how the terminal will be looking like while you use `r` or `s` or `h` or `esc` to control the player:
 
 ![Screenshot_20190818_010249](https://user-images.githubusercontent.com/41234408/63216712-1b8c3600-c157-11e9-8128-7b1477c1d0a0.png)
 
