@@ -232,7 +232,7 @@ Here we will be noticing many of the data types ending with 2d, 2i, 2f, 3d, 3i, 
 ### cv::Vec<>
 
 The `cv::Vec<>` is used as a container for almost any type of data(including objects, pointers etc.) in cpp. But we mainly use it as a container for primitive data types such as int, float, char etc. 
-We will not be using the `cv::Vec<>` template much. Instead we use the aliases that exist for some common instatiations of `cv::Vec<>`. Some of these are:
+We will not be using the `cv::Vec<>` template much. Instead we use the aliases that exist for some common instantiations of `cv::Vec<>`. Some of these are:
 - `cv::Vec2i` - This will serve as a two element integer vector
 - `cv::Vec3i` - This will serve as a three element integer vector
 - `cv::Vec4d` - This will serve as a four element double precision floating point vector
