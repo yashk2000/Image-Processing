@@ -215,7 +215,7 @@ image.at<uchar>(x, y) = 128;
 
 The source code for this can be found [here](https://github.com/yashk2000/Image-Processing/blob/master/WriteFile.cpp)
 
-This is essentailly just an extension to the [code](https://github.com/yashk2000/Image-Processing/blob/master/openVid.cpp) where we opened an existing video file from the local storage of the computer. Here we just use the `cv::VideoWriter` to write our desired frames to the file we want. We specify that we are writing a video in the common MJPG(motion jpeg) by using the `CV_FOURCC` codec. Here, we have to give the `writer` object some parameters. The fitst parameter is the output file path, the second one is the output file type, then comes the number of frames and finally the dimensions(size) of the output frame/frames.
+This is essentailly just an extension to the [code](https://github.com/yashk2000/Image-Processing/blob/master/openVid.cpp) where we opened an existing video file from the local storage of the computer. Here we just use the `cv::VideoWriter` to write our desired frames to the file we want. We specify that we are writing a video in the common MJPG(motion jpeg) by using the `CV_FOURCC` codec. Here, we have to give the `writer` object some parameters. The first parameter is the output file path, the second one is the output file type, then comes the number of frames and finally the dimensions(size) of the output frame/frames.
 
 # 10) Reading and writing a video recorded from camera to a file
 
