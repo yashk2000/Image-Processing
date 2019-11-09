@@ -15,6 +15,7 @@
 13. [Enhance an image using Histogram Equalization](https://github.com/yashk2000/Image-Processing#enhance-an-image-using-histogram-equalization)
 14. [Constrast-Limited Adaptive Histogram Equalization](https://github.com/yashk2000/Image-Processing#constrast-limited-adaptive-histogram-equalization)
 15. [Detecting faces in images](https://github.com/yashk2000/Image-Processing#15-detecting-faces-in-images)
+16. [Detecting faces in videos]()
 
 # 1) Opening an image using openCV
 
@@ -474,3 +475,16 @@ The code in action:
 ![Screenshot_20191110_021430](https://user-images.githubusercontent.com/41234408/68534887-0d1d7700-0360-11ea-895e-f61217bcdd6a.png)
 
 ![Screenshot_20191110_021430](https://user-images.githubusercontent.com/41234408/68534901-2faf9000-0360-11ea-9246-051585ca6799.png)
+
+# 16) Detecting faces in videos
+
+The source code for this can be found [here](https://github.com/yashk2000/Image-Processing/blob/master/detect_faces_video.py)
+
+This is very much similar to the above piece of code in which we used the deep leanring module of openCV to detect faces in am image. The exact same technique has been used to detect faces in a video. 
+
+The difference between an image and a video is that, a video is a collection of images called the frames of a video. So we take each frame of a video, treat it like an image and perform the same technique on it as the one described above. We start taking video input using a video file or from the device webcam using `VideoStream`.
+
+We can get the frames of a video using the following piece of python code:
+```python
+frame = vs.read()
+```
