@@ -15,7 +15,7 @@
 13. [Enhance an image using Histogram Equalization](https://github.com/yashk2000/Image-Processing#enhance-an-image-using-histogram-equalization)
 14. [Constrast-Limited Adaptive Histogram Equalization](https://github.com/yashk2000/Image-Processing#constrast-limited-adaptive-histogram-equalization)
 15. [Detecting faces in images](https://github.com/yashk2000/Image-Processing#15-detecting-faces-in-images)
-16. [Detecting faces in videos]()
+16. [Detecting faces in videos](https://github.com/yashk2000/Image-Processing#16-detecting-faces-in-videos)
 
 # 1) Opening an image using openCV
 
