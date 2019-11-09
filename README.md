@@ -14,6 +14,7 @@
 12. [Creating a histogram with the frequency of pixels in an image](https://github.com/yashk2000/Image-Processing#creating-a-histogram-with-the-frequency-of-pixels-in-an-image)
 13. [Enhance an image using Histogram Equalization](https://github.com/yashk2000/Image-Processing#enhance-an-image-using-histogram-equalization)
 14. [Constrast-Limited Adaptive Histogram Equalization](https://github.com/yashk2000/Image-Processing#constrast-limited-adaptive-histogram-equalization)
+15. [Detecting faces in images]()
 
 # 1) Opening an image using openCV
 
@@ -445,3 +446,31 @@ Histogram equalization is a global function, where as CLAHE is a local function.
 **CLAHE Image**
 
 ![Screenshot_20190919_220830](https://user-images.githubusercontent.com/41234408/65263712-cca53800-db2a-11e9-8d96-871001233789.png)
+
+# 15) Detecting faces in images
+
+The source code for this can be found [here](https://github.com/yashk2000/Image-Processing/blob/master/detect_faces.py).
+
+Here, openCV's deep learning face detector has been used. Two requirements for this are the `.prototxt` and the `.caffemodel` files which have been uploaded in the repo as well. 
+
+Once the models have been loaded, we use `dnn.blobFromImage` to do the preprocessing such as setting the blob dimensions and normalization. 
+
+Next we detect the faces in an image. This is done using two simple lines oof python code:
+
+```python
+net.setInput(blob)
+detections = net.forward()
+```
+
+Once this is done, we iterate over all the detections, draw boxes aroud faces which have a certain threshold of confidence(in order to filter out weaker detections which most probablt will not be faces). 
+
+This code can be run by running the following command in your terminal:
+```bash
+python detect_faces.py --image <path to image> --prototxt <path to deploy.prototxt.txt> --model <path to res10_300x300_ssd_iter_140000.caffemodel>
+```
+
+The code in action:
+
+![Screenshot_20191110_021430](https://user-images.githubusercontent.com/41234408/68534887-0d1d7700-0360-11ea-895e-f61217bcdd6a.png)
+
+![Screenshot_20191110_021430](https://user-images.githubusercontent.com/41234408/68534901-2faf9000-0360-11ea-9246-051585ca6799.png)
