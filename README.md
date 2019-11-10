@@ -14,8 +14,9 @@
 12. [Creating a histogram with the frequency of pixels in an image](https://github.com/yashk2000/Image-Processing#creating-a-histogram-with-the-frequency-of-pixels-in-an-image)
 13. [Enhance an image using Histogram Equalization](https://github.com/yashk2000/Image-Processing#enhance-an-image-using-histogram-equalization)
 14. [Constrast-Limited Adaptive Histogram Equalization](https://github.com/yashk2000/Image-Processing#constrast-limited-adaptive-histogram-equalization)
-15. [Detecting faces in images](https://github.com/yashk2000/Image-Processing#15-detecting-faces-in-images)
-16. [Detecting faces in videos](https://github.com/yashk2000/Image-Processing#16-detecting-faces-in-videos)
+15. [Some basics of openCV with python]()
+16. [Detecting faces in images](https://github.com/yashk2000/Image-Processing#16-detecting-faces-in-images)
+17. [Detecting faces in videos](https://github.com/yashk2000/Image-Processing#17-detecting-faces-in-videos)
 
 # 1) Opening an image using openCV
 
@@ -448,7 +449,68 @@ Histogram equalization is a global function, where as CLAHE is a local function.
 
 ![Screenshot_20190919_220830](https://user-images.githubusercontent.com/41234408/65263712-cca53800-db2a-11e9-8d96-871001233789.png)
 
-# 15) Detecting faces in images
+# 15) Basics of image processing with python
+
+The code for this can be found [here](https://github.com/yashk2000/Image-Processing/blob/master/opencv_tutorial_01.py).
+
+Two packages have been used here, OpenCV and imutils. imutils is another image processing library which has a lot of useful helper functions. 
+
+- Reading an image: cv2.imread("path to image")
+- Finding dimensions of an image: (h, w, d) = image.shape
+This will return the height, width and depth of an image. Depth is the number of channels in an image, which is 3 for a RGB image. 
+- Accessing individual pixels: (B, G, R) = image[y, x]
+This will return the intensity of Blue, Green and Red colors at the pixel (x, y). The input is given in (y, x) format.
+- Extracting a ROI from an image: image[startY:endY, startX:endX]
+- Resizing an image witout maintaining aspect ratio:
+```python
+resized = cv2.resize(image, (300, 300))
+```
+This will resize an image to a 300x300 block without maintaining the aspect ratio.
+- Resizing an image while maintaining aspect ratio:
+```python
+r = 300.0 / w # calculate the ratio of the new width to the old width 
+dim = (300, int(h * r)) # calculate the height using the ratio by multiplying h  by r  (the original height and our ratio respectively)
+resized = cv2.resize(image, dim) # resize while maintaining the aspect ratio
+```
+- Using imutils to automatically resize an image while maintaining aspect ratio:
+```python
+resized = imutils.resize(image, width=300)
+```
+- Rotating an image with OpenCV and imutils:
+```python
+center = (w // 2, h // 2) # find the centre of the image
+M = cv2.getRotationMatrix2D(center, -45, 1.0) # obtain the rotation matrix, -45 for rotating clockwise by 45 degree, 45 for rotating anticlockwise by 45 degrees
+rotated = cv2.warpAffine(image, M, (w, h)) #apply affine warp to get the rotated image
+```
+We can instead use the `rotate` function provided by `imutils` to perform the rotation in a shorter way.
+```python
+rotated = imutils.rotate(image, -45)
+```
+But this method has a drawback. It doesn't take into consideration the change in dimensions of the image and therefore cuts of portions of the image while rotating it.
+
+To fix that we use the `rotate_bounds` method in `imutils`
+```python
+rotated = imutils.rotate_bound(image, 45) #here positive angle means clockwise rotation
+```
+
+A comparison of both the functions together is done here in [this script](https://github.com/yashk2000/Image-Processing/blob/master/rotate_image.py).
+- Smoothing an image: cv2.GaussianBlur(image, (11, 11), 0)
+
+Guassian blur is performed using an 11x11 kernel.
+- Drawing on an image:
+```python
+output = image.copy()
+cv2.rectangle(output, (320, 60), (420, 160), (0, 0, 255), 2)
+cv2.circle(output, (300, 150), 20, (255, 0, 0), -1)
+cv2.line(output, (60, 20), (400, 200), (0, 0, 255), 5)
+```
+- Writing text on an image:
+```python
+cv2.putText(output, "OpenCV + Jurassic Park!!!", (10, 25), 
+cv2.FONT_HERSHEY_SIMPLEX, 0.7, (0, 255, 0), 2)
+```
+
+# 16) Detecting faces in images
 
 The source code for this can be found [here](https://github.com/yashk2000/Image-Processing/blob/master/detect_faces.py).
 
@@ -476,7 +538,7 @@ The code in action:
 
 ![Screenshot_20191110_021430](https://user-images.githubusercontent.com/41234408/68534901-2faf9000-0360-11ea-9246-051585ca6799.png)
 
-# 16) Detecting faces in videos
+# 17) Detecting faces in videos
 
 The source code for this can be found [here](https://github.com/yashk2000/Image-Processing/blob/master/detect_faces_video.py)
 
