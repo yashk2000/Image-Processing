@@ -506,7 +506,7 @@ cv2.line(output, (60, 20), (400, 200), (0, 0, 255), 5)
 ```
 - Writing text on an image:
 ```python
-cv2.putText(output, "OpenCV + Jurassic Park!!!", (10, 25), 
+cv2.putText(output, "Naruto rocks!!!!", (10, 25), 
 cv2.FONT_HERSHEY_SIMPLEX, 0.7, (0, 255, 0), 2)
 ```
 
