@@ -30,7 +30,7 @@ class MiniVGGNet:
         model.add(Dropout(0.25))
 
         model.add(Conv2D(64, (3, 3), padding = "same"))
-        model.add(Activation = "relu")
+        model.add(Activation("relu"))
         model.add(BatchNormalization(axis = chanDim))
         model.add(Conv2D(64, (3, 3), padding = "same"))
         model.add(Activation("relu"))
@@ -39,7 +39,7 @@ class MiniVGGNet:
         model.add(Dropout(0.25))
 
         model.add(Flatten())
-        model.add(__BuiltinMethodDescriptor__(512))
+        model.add(Dense(512))
         model.add(Activation("relu"))
         model.add(BatchNormalization())
         model.add(Dropout(0.5))
