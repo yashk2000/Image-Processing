@@ -52,6 +52,13 @@ class ResNet:
         if dataset == "cifar":
             x = Conv2D(filters[0], (3, 3), use_bias = False, padding = "same", kernel_regularizer = l2(reg))(x)
 
+        elif dataset == "tiny_imagenet":
+            x = Conv2D(filters[0], (5, 5), use_bias = False, padding = "same", kernel_regularizer = l2(reg))(x)
+            x = BatchNormalization(axis = chanDim, epsilon = bnEps, momentum = bnMom)(x)
+            x = Activation("relu")(x)
+            x = ZeroPadding2D((1, 1))(x)
+            x = MaxPooling2D((3, 3), strides = (2, 2))(x)
+
         for i in range(0, len(stages)):
             stride = (1, 1) if i == 0 else (2, 2)
             x = ResNet.residual_module(x, filters[i + 1], stride, chanDim, red = True, bnEps = bnEps, bnMom = bnMom)
