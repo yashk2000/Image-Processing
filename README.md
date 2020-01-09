@@ -17,7 +17,7 @@
 15. [Some basics of openCV with python](https://github.com/yashk2000/Image-Processing#15-basics-of-image-processing-with-python)
 16. [Detecting faces in images](https://github.com/yashk2000/Image-Processing#16-detecting-faces-in-images)
 17. [Detecting faces in videos](https://github.com/yashk2000/Image-Processing#17-detecting-faces-in-videos)
-18. [Thresholding]()
+18. [Thresholding](https://github.com/yashk2000/Image-Processing#18-thresholding)
 
 # 1) Opening an image using openCV
 
