@@ -19,7 +19,7 @@
 17. [Detecting faces in videos](https://github.com/yashk2000/Image-Processing#17-detecting-faces-in-videos)
 18. [Thresholding](https://github.com/yashk2000/Image-Processing#18-thresholding)
 19. [Blur Detection](https://github.com/yashk2000/Image-Processing#19-blur-detection)
-20. [Detecting the centre of a geometric shape]()
+20. [Detecting the centre of a geometric shape](https://github.com/yashk2000/Image-Processing#20-detecting-the-centre-of-a-geometric-shape)
 
 # 1) Opening an image using openCV
 
