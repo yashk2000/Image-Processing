@@ -17,6 +17,7 @@
 15. [Some basics of openCV with python](https://github.com/yashk2000/Image-Processing#15-basics-of-image-processing-with-python)
 16. [Detecting faces in images](https://github.com/yashk2000/Image-Processing#16-detecting-faces-in-images)
 17. [Detecting faces in videos](https://github.com/yashk2000/Image-Processing#17-detecting-faces-in-videos)
+18. [Thresholding]()
 
 # 1) Opening an image using openCV
 
@@ -550,3 +551,36 @@ We can get the frames of a video using the following piece of python code:
 ```python
 frame = vs.read()
 ```
+
+# 18) Thresholding
+
+Thresholding is the simplest method of segmenting image. From a grayscale image, thresholding can be used to create binary images.
+
+There are three types of thresholding methods implemented here:
+1) [Riddler Calvard](https://github.com/yashk2000/Image-Processing/blob/master/RiddlerCalvard.py)
+2) [Adaptive Thresholding](https://github.com/yashk2000/Image-Processing/blob/master/adaptiveThresholding.py)
+3) [Otsu Algorithm](https://github.com/yashk2000/Image-Processing/blob/master/otsu.py)
+
+**Original Image**
+
+![orig](https://user-images.githubusercontent.com/41234408/72064616-43488a00-3302-11ea-9b3e-0964d6edeb98.png)
+
+
+
+**Thresholding by Riddler Calvard**
+
+![Screenshot_20200109_165427](https://user-images.githubusercontent.com/41234408/72064626-46437a80-3302-11ea-93d0-6fe5d3230b07.png)
+
+
+
+
+**Thresholding by Adaptive Thresholding method**
+
+![Screenshot_20200109_165447](https://user-images.githubusercontent.com/41234408/72064632-480d3e00-3302-11ea-8bc9-0722d87220fe.png)
+
+
+
+
+**Thresholding by otsu algorithm**
+
+![Screenshot_20200109_165506](https://user-images.githubusercontent.com/41234408/72064634-4a6f9800-3302-11ea-93a6-8f17c3239676.png)
