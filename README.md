@@ -19,6 +19,7 @@
 17. [Detecting faces in videos](https://github.com/yashk2000/Image-Processing#17-detecting-faces-in-videos)
 18. [Thresholding](https://github.com/yashk2000/Image-Processing#18-thresholding)
 19. [Blur Detection](https://github.com/yashk2000/Image-Processing#19-blur-detection)
+20. [Detecting the centre of a geometric shape]()
 
 # 1) Opening an image using openCV
 
@@ -602,3 +603,23 @@ This code detects the amount of blurring present in an input image by using the 
 
 ![Screenshot_20200109_172401](https://user-images.githubusercontent.com/41234408/72065757-f4502400-3304-11ea-938f-9cf8ea62d92e.png)
 
+# 20) Detecting the centre of a geometric shape
+
+The code for this can be found [here](https://github.com/yashk2000/Image-Processing/blob/master/shapeCentre.py).
+
+The first step is to preprocess the image by applying grayscale conversion, Gaussian smoothing using a 5 x 5 kernel, and finally thresholding.
+
+Then we extract the outline i.e. the contours of the image. Next we loop over each contours, and compute image moments for the contour region. Image moments are used to characterize the shape of an object in an image. These moments capture basic statistical properties of the shape, such as the area of the object, the centroid  orientation, etc.
+Here we use the centre of the contour to determine the image shape. 
+
+**Example 1**
+
+![Screenshot_20200109_173635](https://user-images.githubusercontent.com/41234408/72066685-3f6b3680-3307-11ea-8349-555f3075908d.png)
+
+**Example 2(works with multiple shapes present in an image too)**
+
+![Screenshot_20200109_173649](https://user-images.githubusercontent.com/41234408/72066691-42febd80-3307-11ea-9897-f3b5ac6b7310.png)
+
+**Example 3(If there are multiple shapes, centre of all the shapes can be detected)**
+
+![Screenshot_20200109_173657](https://user-images.githubusercontent.com/41234408/72066695-42febd80-3307-11ea-8cea-bbe2bb240109.png)
