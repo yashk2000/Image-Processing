@@ -18,6 +18,7 @@
 16. [Detecting faces in images](https://github.com/yashk2000/Image-Processing#16-detecting-faces-in-images)
 17. [Detecting faces in videos](https://github.com/yashk2000/Image-Processing#17-detecting-faces-in-videos)
 18. [Thresholding](https://github.com/yashk2000/Image-Processing#18-thresholding)
+19. [Blur Detection]()
 
 # 1) Opening an image using openCV
 
@@ -584,3 +585,20 @@ There are three types of thresholding methods implemented here:
 **Thresholding by otsu algorithm**
 
 ![Screenshot_20200109_165506](https://user-images.githubusercontent.com/41234408/72064634-4a6f9800-3302-11ea-93a6-8f17c3239676.png)
+
+# 19) Blur Detection
+
+The code for this can be found [here](https://github.com/yashk2000/Image-Processing/blob/master/blurDetection.py)
+
+This code detects the amount of blurring present in an input image by using the Laplacian operator provided by openCV. We use the Laplacian operator to compute the varience of an image. A sharp image will have a high varience while a blurred image being smooth, will have a low varience. 
+
+
+**Example 1**
+
+![Screenshot_20200109_172347](https://user-images.githubusercontent.com/41234408/72065753-f1edca00-3304-11ea-9d48-7b89834dc4ee.png)
+
+
+**Example 2**
+
+![Screenshot_20200109_172401](https://user-images.githubusercontent.com/41234408/72065757-f4502400-3304-11ea-938f-9cf8ea62d92e.png)
+
