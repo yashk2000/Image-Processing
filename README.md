@@ -18,7 +18,7 @@
 16. [Detecting faces in images](https://github.com/yashk2000/Image-Processing#16-detecting-faces-in-images)
 17. [Detecting faces in videos](https://github.com/yashk2000/Image-Processing#17-detecting-faces-in-videos)
 18. [Thresholding](https://github.com/yashk2000/Image-Processing#18-thresholding)
-19. [Blur Detection]()
+19. [Blur Detection](https://github.com/yashk2000/Image-Processing#19-blur-detection)
 
 # 1) Opening an image using openCV
 
