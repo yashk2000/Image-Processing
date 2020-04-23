@@ -20,6 +20,7 @@
 18. [Thresholding](https://github.com/yashk2000/Image-Processing#18-thresholding)
 19. [Blur Detection](https://github.com/yashk2000/Image-Processing#19-blur-detection)
 20. [Detecting the centre of a geometric shape](https://github.com/yashk2000/Image-Processing#20-detecting-the-centre-of-a-geometric-shape)
+21. [Long Exposure](https://github.com/yashk2000/Image-Processing/tree/master/longExposure)
 
 # 1) Opening an image using openCV
 
@@ -623,3 +624,21 @@ Here we use the centre of the contour to determine the image shape.
 **Example 3(If there are multiple shapes, centre of all the shapes can be detected)**
 
 ![Screenshot_20200109_173657](https://user-images.githubusercontent.com/41234408/72066695-42febd80-3307-11ea-8cea-bbe2bb240109.png)
+
+# 21) Long Exposure
+
+The code for this can be found [here](https://github.com/yashk2000/Image-Processing/blob/master/longExposure/longExposure.py).
+
+Long exposure is the process of creating a photo that illustrates the effect of passing time. This will be something that is difficult to capture via regular photographic methods(unless you put in a lot of effort and some high end equipment).
+
+This code takes in a video as input and uses frame averaging to simulate long exposures. 
+
+Fox exmaple: 
+
+Video:
+
+![gif](https://github.com/yashk2000/Image-Processing/blob/master/longExposure/mountain.gif)
+
+Output:
+
+![image](https://github.com/yashk2000/Image-Processing/blob/master/longExposure/output/mountainResult.jpg)
