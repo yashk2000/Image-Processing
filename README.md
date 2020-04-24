@@ -21,7 +21,7 @@
 19. [Blur Detection](https://github.com/yashk2000/Image-Processing#19-blur-detection)
 20. [Detecting the centre of a geometric shape](https://github.com/yashk2000/Image-Processing#20-detecting-the-centre-of-a-geometric-shape)
 21. [Long Exposure](https://github.com/yashk2000/Image-Processing#21-long-exposure)
-22. [Segmentation into Superpixels]()
+22. [Segmentation into Superpixels](https://github.com/yashk2000/Image-Processing#22-segmentation-into-superpixels)
 
 # 1) Opening an image using openCV
 
