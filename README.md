@@ -21,6 +21,7 @@
 19. [Blur Detection](https://github.com/yashk2000/Image-Processing#19-blur-detection)
 20. [Detecting the centre of a geometric shape](https://github.com/yashk2000/Image-Processing#20-detecting-the-centre-of-a-geometric-shape)
 21. [Long Exposure](https://github.com/yashk2000/Image-Processing#21-long-exposure)
+22. [Segmentation into Superpixels]()
 
 # 1) Opening an image using openCV
 
@@ -642,3 +643,28 @@ Video:
 Output:
 
 ![image](https://github.com/yashk2000/Image-Processing/blob/master/longExposure/output/mountainResult.jpg)
+
+# 22) Segmentation into Superpixels
+
+The code for this can be found [here](https://github.com/yashk2000/Image-Processing/blob/master/superpixel.py).
+
+A group of pixels extracted from the pixel grid of an image which share some characteristics are called superpixels. These regions provide a lot more information about an image than a single pixel of the image would. 
+Performing operation on super pixels reduces the computation effort. Once the superpixels regions are obtained, instead of dealing with hundreds of thousands of pixels, we can just deal with thousands of superpixels. This also provides more perceptual meaning than a single pixel as all pixels belonging to a superpixel group share some common characteristics.
+
+For exmaple, here is the input image:
+
+![photo](https://user-images.githubusercontent.com/41234408/80244661-eee5d200-8686-11ea-8fb5-db611b6ef322.jpg)
+
+Image segemnted into 100 superpixels
+
+![Screenshot from 2020-04-24 23-49-44](https://user-images.githubusercontent.com/41234408/80244576-cbbb2280-8686-11ea-952d-dc3a248e7bcc.png)
+
+
+Image segmented into 200 superpixels
+
+![Screenshot from 2020-04-24 23-49-42](https://user-images.githubusercontent.com/41234408/80244599-d83f7b00-8686-11ea-8a33-728790f45109.png)
+
+
+Image segmented into 300 superpixels
+
+![Screenshot from 2020-04-24 23-49-39](https://user-images.githubusercontent.com/41234408/80244625-e2617980-8686-11ea-9830-8693839bfb5f.png)
