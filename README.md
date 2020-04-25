@@ -22,6 +22,7 @@
 20. [Detecting the centre of a geometric shape](https://github.com/yashk2000/Image-Processing#20-detecting-the-centre-of-a-geometric-shape)
 21. [Long Exposure](https://github.com/yashk2000/Image-Processing#21-long-exposure)
 22. [Segmentation into Superpixels](https://github.com/yashk2000/Image-Processing#22-segmentation-into-superpixels)
+23. [Colors in superpixels](https://github.com/yashk2000/Image-Processing#23-colors-in-superpixels)
 
 # 1) Opening an image using openCV
 
@@ -668,3 +669,11 @@ Image segmented into 200 superpixels
 Image segmented into 300 superpixels
 
 ![Screenshot from 2020-04-24 23-49-39](https://user-images.githubusercontent.com/41234408/80244625-e2617980-8686-11ea-9830-8693839bfb5f.png)
+
+# 23) Colors in superpixels
+
+The code for this can be found [here](https://github.com/yashk2000/Image-Processing/blob/master/colored_regions.py).
+
+This helps in detecting the saturation of colors in different parts of an image that have been segmented into superpixels. 
+
+![Screenshot from 2020-04-26 13-27-49](https://user-images.githubusercontent.com/41234408/80301559-7ab04900-87c2-11ea-9a65-3528779f2be8.png)
