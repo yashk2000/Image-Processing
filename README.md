@@ -23,6 +23,7 @@
 21. [Long Exposure](https://github.com/yashk2000/Image-Processing#21-long-exposure)
 22. [Segmentation into Superpixels](https://github.com/yashk2000/Image-Processing#22-segmentation-into-superpixels)
 23. [Colors in superpixels](https://github.com/yashk2000/Image-Processing#23-colors-in-superpixels)
+24. [Image Inpainting using OpenCV]()
 
 # 1) Opening an image using openCV
 
@@ -677,3 +678,12 @@ The code for this can be found [here](https://github.com/yashk2000/Image-Process
 This helps in detecting the saturation of colors in different parts of an image that have been segmented into superpixels. 
 
 ![Screenshot from 2020-04-26 13-27-49](https://user-images.githubusercontent.com/41234408/80301559-7ab04900-87c2-11ea-9a65-3528779f2be8.png)
+
+# 24) Image Inpainting using OpenCV
+
+The code for this can be found [here](https://github.com/yashk2000/Image-Processing/blob/master/opencv_inpainting.py).
+
+Image inpainting is used for the removal of unwanted objects from an image or in restoring damaged portions of old photos.
+We need to provide the input image with the defects and a mask which determines the regions to be *inpainted*. 
+
+![Screenshot from 2020-05-20 23-56-18](https://user-images.githubusercontent.com/41234408/82483253-bacec700-9af5-11ea-9691-d73e56f28d93.png)
