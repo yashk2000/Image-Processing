@@ -23,7 +23,7 @@
 21. [Long Exposure](https://github.com/yashk2000/Image-Processing#21-long-exposure)
 22. [Segmentation into Superpixels](https://github.com/yashk2000/Image-Processing#22-segmentation-into-superpixels)
 23. [Colors in superpixels](https://github.com/yashk2000/Image-Processing#23-colors-in-superpixels)
-24. [Image Inpainting using OpenCV]()
+24. [Image Inpainting using OpenCV](https://github.com/yashk2000/Image-Processing/blob/master/README.md#24-image-inpainting-using-opencv)
 
 # 1) Opening an image using openCV
 
